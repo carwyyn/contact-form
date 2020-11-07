@@ -48,6 +48,6 @@ app.post('/send', (req, res) => {
   }
 });
 
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3030, () => {
   console.log('server start on post 3030')
 });
